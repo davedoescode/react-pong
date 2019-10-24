@@ -1,3 +1,5 @@
+import { BACKGROUND_COLOR, FOREGROUND_COLOR } from '../../constants';
+
 class Board {
   constructor(width, height) {
     this.width = width;
@@ -5,12 +7,12 @@ class Board {
   }
 
   drawBackground(ctx) {
-    ctx.fillStyle = 'black';
+    ctx.fillStyle = BACKGROUND_COLOR;
     ctx.fillRect(0, 0, this.width, this.height);
   }
 
   drawDivider(ctx) {
-    ctx.strokeStyle = 'white';
+    ctx.strokeStyle = FOREGROUND_COLOR;
 
     ctx.beginPath();
     ctx.moveTo(this.width / 2, 0);

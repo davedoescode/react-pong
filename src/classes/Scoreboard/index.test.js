@@ -1,4 +1,5 @@
 import Scoreboard from './index';
+import { FOREGROUND_COLOR } from '../../constants';
 
 describe('Scoreboard', () => {
   let position;
@@ -55,7 +56,7 @@ describe('Scoreboard', () => {
 
     it('sets rectangle stroke to white', () => {
       createScoreboardInstance().draw(ctx);
-      expect(ctx.strokeStyle).toBe('white');
+      expect(ctx.strokeStyle).toBe(FOREGROUND_COLOR);
     });
 
     it('draws two rectangles', () => {
@@ -89,7 +90,7 @@ describe('Scoreboard', () => {
 
     it('sets text color to white', () => {
       createScoreboardInstance().draw(ctx);
-      expect(ctx.fillStyle).toBe('white');
+      expect(ctx.fillStyle).toBe(FOREGROUND_COLOR);
     });
 
     it('sets font to half the size Arial font', () => {

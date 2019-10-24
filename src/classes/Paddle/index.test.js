@@ -1,4 +1,5 @@
 import Paddle from './index';
+import { FOREGROUND_COLOR } from '../../constants';
 
 describe('Paddle Component', () => {
   let height;
@@ -12,10 +13,10 @@ describe('Paddle Component', () => {
     width = 5;
     position = { x: 10, y: 50 };
     maxHeight = 800;
-    color = 'white';
+    color = FOREGROUND_COLOR;
   });
 
-  const createPaddleInstance = () => new Paddle(height, width, position, maxHeight, color);
+  const createPaddleInstance = () => new Paddle(width, height, position, maxHeight, color);
 
   describe('Constructor Method', () => {
     it('creates a new paddle instance', () => {

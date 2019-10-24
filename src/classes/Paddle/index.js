@@ -1,7 +1,7 @@
 import { PADDLE_SPEED } from '../../constants';
 
 class Paddle {
-  constructor(height, width, position, maxHeight, color) {
+  constructor(width, height, position, maxHeight, color) {
     this.height = height;
     this.width = width;
     this.position = position;

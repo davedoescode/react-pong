@@ -1,3 +1,5 @@
+import { FOREGROUND_COLOR } from '../../constants';
+
 class Scoreboard {
   constructor(position, size, scores) {
     this.position = position;
@@ -19,12 +21,12 @@ class Scoreboard {
     const { x, y } = this.position;
 
     // draw box
-    ctx.strokeStyle = 'white';
+    ctx.strokeStyle = FOREGROUND_COLOR;
     ctx.strokeRect(x - width, y, width, height);
     ctx.strokeRect(x, y, width, height);
 
     // draw scores
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = FOREGROUND_COLOR;
     ctx.font = `${this.size / 2}px Arial`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';

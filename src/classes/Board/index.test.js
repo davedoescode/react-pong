@@ -1,4 +1,5 @@
 import Board from './index';
+import { BACKGROUND_COLOR, FOREGROUND_COLOR } from '../../constants';
 
 describe('Board', () => {
   let width;
@@ -34,7 +35,7 @@ describe('Board', () => {
 
     it('makes the rectangle black', () => {
       createBoardInstance().draw(ctx);
-      expect(ctx.fillStyle).toBe('black');
+      expect(ctx.fillStyle).toBe(BACKGROUND_COLOR);
     });
 
 
@@ -49,7 +50,7 @@ describe('Board', () => {
 
       it('sets line color to white', () => {
         createBoardInstance().draw(ctx);
-        expect(ctx.strokeStyle).toBe('white');
+        expect(ctx.strokeStyle).toBe(FOREGROUND_COLOR);
       });
 
       it('starts drawing', () => {
