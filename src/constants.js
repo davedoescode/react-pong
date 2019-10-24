@@ -1,0 +1,9 @@
+// BOARD
+
+// SCOREBOARD 
+
+// PADDLE
+
+export const PADDLE_SPEED = 5;
+
+// PONG BALL
