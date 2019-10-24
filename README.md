@@ -1,2 +1,2 @@
 # react-pong
-The Atari Classic game of pong, made in React.
+The 1972 Atari Classic - Pong (made with React)
