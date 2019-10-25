@@ -18,7 +18,9 @@ const App = ({ status }) => (
         <Results />
       )
       : (
-        <ConnectedPong width={WIDTH} height={HEIGHT} />
+        <center>
+          <ConnectedPong width={WIDTH} height={HEIGHT} />
+        </center>
       )
     }
   </div>

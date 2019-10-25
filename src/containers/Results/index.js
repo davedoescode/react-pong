@@ -5,16 +5,18 @@ import { connect } from 'react-redux';
 import { startNewGame } from '../Pong/actions';
 
 export const Results = ({ status, onStartNewGame }) => (
-  <div>
-    <div id="StatusText">{status}</div>
-    <button
-      id="NewGame"
-      type="button"
-      onClick={() => { onStartNewGame(); }}
-    >
-      New Game
-    </button>
-  </div>
+  <center>
+    <div>
+      <div id="StatusText">{status}</div>
+      <button
+        id="NewGame"
+        type="button"
+        onClick={() => { onStartNewGame(); }}
+      >
+        New Game
+      </button>
+    </div>
+  </center>
 );
 
 Results.propTypes = {
