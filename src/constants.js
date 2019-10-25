@@ -15,4 +15,5 @@ export const PADDLE_WIDTH = 10;
 export const PADDLE_HEIGHT = 60;
 
 // PONG BALL
-export const INITIAL_BALL_SPEED = 5;
+export const RADIUS = 5;
+export const VELOCITY_DELTA = { x: 3, y: 3 };

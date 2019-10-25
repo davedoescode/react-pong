@@ -7,7 +7,8 @@ import PongBall from '../../classes/PongBall';
 import {
   PADDLE_WIDTH,
   PADDLE_HEIGHT,
-  INITIAL_BALL_SPEED,
+  RADIUS,
+  VELOCITY_DELTA,
   SCOREBOARD_SIZE,
   FOREGROUND_COLOR,
 } from '../../constants';
@@ -27,9 +28,9 @@ const getPaddleDefault = (width, height, isLeftPaddle) => {
 };
 const getBallDefault = (width, height) => new PongBall(
   FOREGROUND_COLOR,
-  INITIAL_BALL_SPEED,
+  RADIUS,
   { x: 40, y: height / 2 },
-  { x: 3, y: 3 },
+  VELOCITY_DELTA,
   height,
   width,
 );
