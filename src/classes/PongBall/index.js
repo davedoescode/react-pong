@@ -3,7 +3,7 @@
 export class RightEdgeHit extends Error {}
 export class LeftEdgeHit extends Error {}
 
-class Ball {
+class PongBall {
   constructor(color, radius, position, delta, maxHeight, maxWidth) {
     this.color = color;
     this.radius = radius;
@@ -69,4 +69,4 @@ class Ball {
   }
 }
 
-export default Ball;
+export default PongBall;

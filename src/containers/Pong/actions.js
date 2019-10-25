@@ -9,7 +9,6 @@ import {
   PADDLE_HEIGHT,
   INITIAL_BALL_SPEED,
   SCOREBOARD_SIZE,
-  INITIAL_SCORE,
   FOREGROUND_COLOR,
 } from '../../constants';
 
@@ -19,7 +18,7 @@ export const setKeyPressed = (key, isDown) => ({
 });
 
 const getGameboardDefault = (width, height) => new Board(width, height);
-const getScoreboardDefault = (width) => new Scoreboard({ x: width / 2, y: 10 }, SCOREBOARD_SIZE, INITIAL_SCORE);
+const getScoreboardDefault = (width) => new Scoreboard({ x: width / 2, y: 10 }, SCOREBOARD_SIZE, [0, 0]);
 const getPaddleDefault = (width, height, isLeftPaddle) => {
   const x = isLeftPaddle ? 5 : width - PADDLE_WIDTH - 5;
   const y = (height - PADDLE_HEIGHT) / 2;

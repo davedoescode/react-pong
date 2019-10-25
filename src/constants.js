@@ -6,9 +6,8 @@ export const BACKGROUND_COLOR = 'black';
 export const FOREGROUND_COLOR = 'white';
 
 // SCOREBOARD 
-export const MAX_SCORE = 5;
+export const MAX_SCORE = 2;
 export const SCOREBOARD_SIZE = 30;
-export const INITIAL_SCORE = [0, 0];
 
 // PADDLE
 export const PADDLE_SPEED = 5;
