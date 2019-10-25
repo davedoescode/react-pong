@@ -1,5 +1,5 @@
 # React-Pong
-The 1972 Atari Classic - Pong (made with React)
+The 1972 Atari Classic - *Pong* (made with React)
 
 ### How to Play
 * clone github repo
